@@ -2062,6 +2062,80 @@ in {
           See https://github.com/mateusauler/git-worktree-switcher for more.
         '';
       }
+
+      {
+        time = "2025-02-20T18:39:31+00:00";
+        condition = hostPlatform.isLinux;
+        message = ''
+          A new module is available: 'programs.swayimg'.
+
+          swayimg is a fully customizable and lightweight image viewer for
+          Wayland based display servers.
+          See https://github.com/artemsen/swayimg for more.
+        '';
+      }
+
+      {
+        time = "2025-02-16T17:00:00+00:00";
+        message = ''
+          A new module is available: 'services.wluma'.
+
+          Wluma is a tool for Wayland compositors to automatically adjust
+          screen brightness based on the screen contents and amount of ambient light around you.
+        '';
+      }
+
+      {
+        time = "2025-02-21T16:53:20+00:00";
+        message = ''
+          A new module is available: 'programs.earthly'.
+
+          Earthly is a build configuration framework utilizing buildkit and
+          Dockerfile-like syntax for fast builds and simplicity.
+        '';
+      }
+
+      {
+        time = "2025-02-22T16:53:20+00:00";
+        message = ''
+          A new module is available: 'programs.jqp'.
+
+          A TUI playground for experimenting with `jq`.
+        '';
+      }
+
+      {
+        time = "2025-02-22T16:46:56+00:00";
+        condition = hostPlatform.isLinux;
+        message = ''
+          A new module is available: 'services.wpaperd'.
+
+          This replaces the existing module, 'programs.wpaperd', and adds a
+          systemd service to ensure its execution.
+        '';
+      }
+
+      {
+        time = "2025-01-26T16:40:00+00:00";
+        message = ''
+          A new module is available: 'programs.mods'
+
+          mods is a command line AI tool that is highly configurable and allows
+          querying AI models hosted locally or by other services (OpenAI,
+          Cohere, Groq).
+        '';
+      }
+
+      {
+        time = "2025-03-11T02:34:43+00:00";
+        condition = config.programs.zsh.enable;
+        message = ''
+          A new module is available: 'programs.zsh.initContent'.
+
+          initContent option allows you to set the content of the zshrc file,
+          you can use `lib.mkOrder` to specify the order of the content you want to insert.
+        '';
+      }
     ];
   };
 }
